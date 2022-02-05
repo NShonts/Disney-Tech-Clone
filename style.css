@@ -20,9 +20,14 @@ html, body {
 
 }
 
+
+
 /* Navbar */
 
 .navbar {
+    /*position: fixed;
+    top: 0;
+    z-index: 1000;*/
     width: 100%;
     height: auto;
     background-color: #000;
@@ -347,8 +352,150 @@ h3 {
     width: 100%;
 }
 
+@media (min-width: 550px) and (max-width: 799px) {
 
-@media (min-width: 800px) {
+    .banner-content {
+        width: 50%;
+        left: 10px;
+    }
+    
+    #banner-text {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-top: 40%;
+    }
+
+    .keyword-search {
+        width: 90vw;
+        margin-top: 160px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .keyword-search input {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    #search-submit {
+        width: 30%;
+        text-align: center;
+    }
+
+    #why {
+        margin-top: 100px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #why-disney p {
+        width: 90%;
+        font-size: 1.8rem;
+        margin: 0rem 3rem;
+        padding-bottom: 3rem;
+        font-weight: 300 light;
+        color: #333333;
+    }
+
+    .positions {
+        margin: 0rem 3rem;
+    }
+    
+
+    .job-title {
+        font-size: 1.6rem;
+    }
+
+    #collapse-list {
+        width: 30%;
+    }
+
+    #quote {
+        margin: 0rem 3.5rem;
+        margin-top: 5rem;
+    }
+    
+    h3 {
+        margin-left: 5rem;
+        font-size: 1.5rem;
+    }
+
+    #projects li { 
+        padding: 10px 0px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #projects {
+        margin: 0rem 0rem;
+    }
+
+    .office-location {
+        font-size: 1.8rem;
+    }
+
+    #offices {
+        margin: 0rem 3rem;
+    }
+
+    #view-locations{
+        margin: 3rem 36%;
+        width: 40%;
+    }
+
+    .footer-content h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        right: 100px;
+        top: 25px;
+    }
+    
+    .footer-content a {
+        width: 40%;
+        right: 45px;
+        top: 75px;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 550px) and (max-width: 573px) {
+    .keyword-search {
+        width: 90vw;
+        margin-top: 50px;
+    }
+
+@media (max-width: 574px) {
+    .keyword-search {
+        width: 90vw;
+        margin-top: 60px;
+    }
+
+@media (max-width: 600px) {
+    .positions li {
+        width: 50%;
+        margin: 0px 0px;
+    }
+}
+
+@media (min-width: 601px) {
+    .positions li {
+        width: 25%;
+        margin: 0px 0px;
+    }
+}
+
+@media (max-width: 630px) {
+    .keyword-search {
+        width: 90vw;
+        margin-top: 110px;
+    }
+}
+
+
+@media (min-width: 800px) and (max-width: 1000px) {
 
     .banner-content {
         width: 35%;
@@ -444,8 +591,7 @@ h3 {
 
 }
 
-
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .navbar-right li:last-child span {
         display: none;
     }
