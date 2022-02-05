@@ -22,28 +22,6 @@ html, body {
 
 /* Navbar */
 
-@media (max-width: 1200px) {
-    .navbar-right li:last-child span {
-        display: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    
-    #banner-text {
-        text-shadow: 2px 4px 3px rgb(0 0 0 / 50%);
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 4rem;
-        line-height: 6rem;
-        margin-bottom: 2rem;
-        margin-top: 3rem;
-    }
-
-}
-
-
 .navbar {
     width: 100%;
     height: auto;
@@ -121,9 +99,6 @@ html, body {
     margin-bottom: 2rem;
 }
 
-.keyword-search {
-    height: 5rem;
-}
 
 #keyword {
     padding-left: 1rem;
@@ -189,6 +164,8 @@ h2 {
     list-style-type: none;
     width: 25%;
     margin: 40px 0px;
+    word-break: break-word;
+    padding: 10px;
 }
 
 .positions a {
@@ -200,8 +177,7 @@ h2 {
 }
 
 .positions img {
-    height: 200px;
-    width: 200px;
+    width: 100%;
     border-radius: 50%;
 
 }
@@ -269,7 +245,7 @@ h3 {
     position: relative;
 }
 
-#projects li a img {
+#projects li img {
     width: 100%;
 }
 
@@ -304,6 +280,7 @@ h3 {
     list-style-type: none;
     width: 33%;
     margin: 30px 0px;
+    padding: 10px;
 }
 
 #offices a {
@@ -315,11 +292,10 @@ h3 {
 }
 
 #offices img {
-    height: 225px;
-    width: 225px;
+    width: 100%;
     border-radius: 50%;
-
 }
+
 
 .office-location {
     font-size: 2.6rem;
@@ -368,5 +344,109 @@ h3 {
 }
 
 .footer-content img {
-    height: 80vh;
+    width: 100%;
+}
+
+
+@media (min-width: 800px) {
+
+    .banner-content {
+        width: 35%;
+        left: 10px;
+    }
+    
+    #banner-text {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+
+    .keyword-search input {
+        display: block;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #search-submit {
+        display: block;
+        width: 90%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #why-disney p {
+        width: 90%;
+        font-size: 1.8rem;
+        margin: 0rem 3rem;
+        padding-bottom: 3rem;
+        font-weight: 300 light;
+        color: #333333;
+    }
+
+    .positions {
+        margin: 0rem 3rem;
+    }
+
+    .positions li {
+        width: 25%;
+        margin: 0px 0px;
+    }
+
+    .job-title {
+        font-size: 1.6rem;
+    }
+
+    #collapse-list {
+        width: 20%;
+    }
+
+    #quote {
+        margin: 0rem 3.5rem;
+        margin-top: 5rem;
+    }
+    
+    h3 {
+        margin-left: 5rem;
+        font-size: 1.5rem;
+    }
+
+    #projects {
+        margin: 0rem 0rem;
+    }
+
+    #offices {
+        margin: 0rem 3rem;
+    }
+
+    #view-locations{
+    margin: 3rem 36%;
+    width: 40%;
+    }
+
+    .footer-content h1 {
+        font-size: 3rem;
+        right: 100px;
+        top: 75px;
+    }
+    
+    .footer-content a {
+        width: 30%;
+        right: 60px;
+        top: 170px;
+        word-wrap: break-word;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .navbar-right li:last-child span {
+        display: none;
+    }
 }
